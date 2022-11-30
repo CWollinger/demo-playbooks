@@ -1,0 +1,8 @@
+- name: Create file on all hosts
+  hosts: all
+  tasks:
+  - name: Copy using inline content
+    ansible.builtin.copy:
+      content: 'Hello'
+      dest: /tmp/hello.txt
+      mode: 0644
