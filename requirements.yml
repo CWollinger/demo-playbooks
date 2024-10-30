@@ -3,4 +3,4 @@
 collections:
   # Install a collection from Ansible Galaxy.
   - name: community.general
-    source: http://192.168.49.2:32532/
+    source: http://192.168.49.2:32532/api/galaxy/
