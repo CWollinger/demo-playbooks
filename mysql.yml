@@ -1,0 +1,9 @@
+---
+- name: Get mySQL Info
+  hosts: all
+  tasks:
+  - name: Collect info about databases and version using ~/.my.cnf as a credential file
+    community.mysql.mysql_info:
+      filter:
+      - databases
+      - version
